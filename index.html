@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETSna Aldin</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body, html{
+            padding: 0;
+            margin: 0;
+            background-color: rgb(240, 240, 240);
+            width: 100%;
+            height: 100vh;
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;     
+        }
+        h1{
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+            font-variation-settings: "wdth" 100; 
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        nav a{
+            padding: 1em;
+        }
+        .logo{
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .main-image{
+            opacity: 75%;
+            border-radius: 20px;
+        }
+        .main-text{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        article{
+            margin:1em;
+            display:flex;
+            gap: 1em;
+            background-color: #EBEBEB;
+            border-radius: 20px;
+        }
+        .hero{
+            margin-top: 8em;
+            background-color: #323232;
+            color:white;
+            display: flex;
+            flex-direction: column;
+        }
+        .other{
+            display:flex;
+            justify-content: center;
+            flex-shrink: 0;
+            gap: 1em;
+        }
+        .other a{
+            width: 45%;
+            margin: 1em;
+        }
+        .other img{
+            margin: 0;
+            border-radius: 12px;
+        }
+        .text-other{
+            flex-direction: column;
+            margin: 1em;
+            gap: 0;
+            margin:0;
+            margin-left: 1em;
+            justify-content: center;
+        }
+        .buy-btn{
+            border: 0;
+            background-color: #323232;
+            color:whitesmoke;
+            padding: 0.5em;
+            border-radius: 5px;
+        }
+        footer{
+            display:flex;
+            flex-direction: column;
+            padding: 1em;
+            gap: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./src/earphone-logo-headphone-headset-symbol-260nw-1148816990(1).png" width="5%" alt="" class="logo">
+            <a href="">Home</a>
+            <a href="">Produk</a>
+            <a href="">Tentang Kami</a>
+            <a href="">Hubungi Kami</a>
+        </nav>
+    </header>
+    <main>
+        <article class="main-product">
+            <img src="./src/solis2.png"width="50%" alt="" class="main-image">
+            <div class="main-text">
+                <h1>Solis 2</h1>
+                <p>Tuned to the harman neutral curve. <br>
+                    Detachable, easy to use and affordable.
+                </p>
+                <a href="./form/index.html"><button class="buy-btn">Buy Now!</button></a>
+            </div>
+        </article>
+        <article class="hero">
+            <div class="text-other">
+                <h1>Interested in Us?</h1>
+                <p>Check out our other products</p>
+            </div>
+            <div class="other">
+                <a href=""><img src="./src/7Hz-x-Crinacle-Zero-2-earbud-kabel-IEM-Driver-dinamis-diperbarui-dengan-kabel-IEM-untuk-musisi.png" width="100%"></a>
+                <a href=""><img src="./src/tangzuwaner.jpg" width="100%"></a>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <h3>Contact Us</h3>
+        <p>Keputih, Sukolilo, Kota Surabaya, Jawa Timur</p>
+        <i class="fa fa-instagram"> @igtokonya</i>
+        <i class="fa fa-google"> tokonya@gmail.com</i>
+    </footer>
+</body>
+</html>

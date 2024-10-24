@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            width: 100%;
+            background-color: rgb(240, 240, 240);
+            display: flex;
+            margin: 1em;
+            justify-content: center;
+        }
+        main{
+            width: 50%;
+            background-color: #323232;
+            padding: 1em;
+            color:white;
+            border-radius: 12px;
+
+        }
+        form{
+            display:flex;
+            flex-direction: column;
+            gap: 1em;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #input-submit{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="">
+            <thead>
+                <tr>
+                    <th scope="col" style="text-align: center;">Isi data terlebih dahulu</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><label for="name">Nama</label></th>
+                    <td><input type="text" name="name" id="input-name"></td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="nohp">No. Hp</label></th>
+                    <td><input type="number" name="nohp" id="input-nohp"></td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="email">Email</label></th>
+                    <td><input type="text" name="email" id="input-email"></td>
+                </tr>
+                <tr>
+                    <input type="submit" value="Submit" id="input-submit">
+                </tr>
+            </tbody>
+        </form>
+    </main>
+</body>
+<script>
+    const maxLength = 13;
+    const name = document.getElementById("input-name").value;
+    const nohp = document.getElementById("input-nohp").value;
+    const email = document.getElementById("input-email").value;
+
+    if(name === ""){
+        alert("The name field is emtpy");
+    }
+
+    if(nohp.length > maxLength || nohp === ""){
+        alert("The inputted number is invalid");
+    }
+
+    if(!email.includes("@") || email === ""){
+        alert("Please input a proper email");
+    }
+
+    if(isValid){
+        print("digidaw");
+    }
+</script>
+</html>
