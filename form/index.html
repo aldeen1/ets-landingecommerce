@@ -35,7 +35,7 @@
 </head>
 <body>
     <main>
-        <form action="">
+        <form action="" id="form">
             <thead>
                 <tr>
                     <th scope="col" style="text-align: center;">Isi data terlebih dahulu</th>
@@ -63,25 +63,33 @@
     </main>
 </body>
 <script>
-    const maxLength = 13;
-    const name = document.getElementById("input-name").value;
-    const nohp = document.getElementById("input-nohp").value;
-    const email = document.getElementById("input-email").value;
+    document.getElementById("form").addEventListener("submit", function(event) {
+            event.preventDefault();
 
-    if(name === ""){
-        alert("The name field is emtpy");
-    }
+            const maxLength = 13;
+            const minLength = 8;
+            const name = document.getElementById("input-name").value;
+            const nohp = document.getElementById("input-nohp").value;
+            const email = document.getElementById("input-email").value;
 
-    if(nohp.length > maxLength || nohp === ""){
-        alert("The inputted number is invalid");
-    }
+            const inputhp = document.getElementById("input-nohp");
+            inputhp.onkeydown = (event) => {
+                if(isNaN(event.key) && event.key !== 'Backspace'){
+                    event.preventDefault;
+                }
+            }
 
-    if(!email.includes("@") || email === ""){
-        alert("Please input a proper email");
-    }
+            if (name.trim() === "") {
+                alert("The name field is empty");
+            }
 
-    if(isValid){
-        print("digidaw");
-    }
+            if (nohp.trim() === "" || nohp.length > maxLength || nohp.length < minLength) {
+                alert("The inputted number is invalid");
+            }
+
+            if (email.trim() === "" || !email.includes("@")) {
+                alert("Please input a proper email");
+            }
+        });
 </script>
 </html>
